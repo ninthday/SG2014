@@ -1,0 +1,743 @@
+/**
+ * Modules
+ */
+
+@import "mixin";
+@import "compass/css3";
+
+/**
+ * Fonts
+ */
+
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans");
+
+/**
+ * Settings
+ */
+
+@import "settings";
+
+
+/**
+ * Global
+ */
+
+html {
+  font-size: $base_font_size;
+  -webkit-font-size-adjust: none;
+}
+
+body {
+  font-size: $base_font_size;
+  font-family: "Droid Sans", "Droid Sans Fallback", "微軟正黑體","Microsoft JhengHei", "STHeiti", "Heiti TC", SimSun,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: $base_line_height;
+
+  padding-top: 250px;
+  @include respondTo(handhelds) {
+    font-size: $base_font_size * 1.1;
+    padding-top: 55px;
+  }
+
+  @include transition(1s);
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-size-adjust: none;
+
+  &.close {
+    padding-top: 100px;
+  }
+}
+
+a {
+  color: $second_color;
+  text-decoration: none;
+
+  &.link-light {
+    color: $base_color;
+  }
+}
+
+hr {
+  border: none;
+
+  border-bottom: 1px solid adjust-lightness(black, 90%);
+
+  &.light {
+    border-bottom: 1px solid adjust-lightness(black, 20%);
+  }
+}
+
+p {
+  line-height: 1.5em;
+}
+
+/**
+ * UI Element
+ */
+
+.button {
+  @include border-radius(5px);
+
+  padding: .5em .7em;
+
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+  &.light {
+    background: white;
+  }
+
+  &.normal {
+    color: white;
+    background: $base_color;
+  }
+
+  &.dark {
+    color: white;
+    background: $second_color;
+  }
+
+  &.large {
+    font-size: $base_font_size * 2;
+    font-size: 2rem;
+  }
+
+  &.middle {
+    font-size: $base_font_size * 1.5;
+    font-size: 1.5rem;
+  }
+
+  &.small {
+    font-size: $base_font_size * 1.1;
+    font-size: 1.1rem;
+  }
+}
+
+/**
+ * Grid
+ */
+
+.container {
+  width: $frame_width;
+
+  @include respondTo(tablets) { width: 96%; }
+
+  margin: 0 auto;
+}
+
+@include makeGrid(60px, 12, 20px);
+@include respondTo(tablets) {
+  @include makeMobileGrid(8, 20px);
+}
+@include respondTo(handhelds) {
+  @include makeMobileGrid(4, 20px);
+}
+
+/**
+ * Header
+ */
+
+header[role="header"] {
+  // For LOGO
+  h1 {
+    text-indent: -999999px;
+
+    background: image-url("banner_logo.png") center;
+
+    width: 700px;
+    height: 150px;
+
+    margin: 0 auto;
+
+    @include transition(1s);
+
+    @include respondTo(handhelds) {
+      text-indent: 0;
+
+      background: none;
+
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &.close {
+    height: 100px;
+
+    h1 {
+      height: 0;
+    }
+  }
+
+  height: 250px;
+  width: 100%;
+
+  z-index: 999;
+  background: white;
+
+  position: fixed;
+
+  top: 0;
+
+  @include respondTo(handhelds) {
+    height: auto;
+
+    padding: 10px 0;
+  }
+
+  @include transition(1s);
+
+  @include clearfix();
+}
+
+/**
+ * Footer
+ */
+
+footer[role="footer"] {
+  letter-spacing: .15em;
+
+  font-size: $base_font_size * 1.1;
+  font-size: 1.1rem;
+
+  margin-top: 2em;
+
+  .social {
+    //font-size: $base_font_size * 1.3;
+    //font-size: 1.3rem;
+
+    a {
+      color: #FFF;
+    }
+  }
+
+  .split {
+    margin: 0 .5em;
+
+    color: adjust-lightness(black, 35%);
+  }
+}
+
+/**
+ * Navigator
+ */
+
+nav[role="main_menu"] {
+
+  @include respondTo(handhelds) {
+    position: absolute;
+
+    width: 96%;
+
+    top: 50%;
+
+    margin-top: -12px;
+  }
+
+  header {
+    display: none;
+
+    @include respondTo(handhelds) {
+      display: block;
+
+      text-align: right;
+
+      h2 {
+        font-size: $base_font_size * 1.1;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+
+        a {
+          color: white;
+          background: $base_color;
+
+          padding: 10px;
+        }
+      }
+
+      @include clearfix();
+    }
+  }
+
+  ul {
+    text-align: center;
+
+    padding: 0;
+
+    @include respondTo(handhelds) {
+      background: $base_color;
+
+      display: none;
+
+    }
+  }
+
+  li {
+    display: inline;
+
+    font-size: $base_font_size * 2;
+    font-size: 2rem;
+
+    @include respondTo(tablets) {
+      font-size: $base_font_size * 1.5;
+      font-size: 1.5rem;
+    }
+
+    @include respondTo(handhelds) {
+      display: block;
+
+      font-size: $base_font_size * 1.1;
+      font-size: 1.1rem;
+    }
+
+    a {
+      display: inline-block;
+
+      color: $third_color;
+
+      padding: .5em;
+
+      text-transform: uppercase;
+
+      position: relative;
+
+      @include respondTo(handhelds) {
+        color: white;
+
+        display: block;
+
+      }
+
+      &:hover {
+        color: $second_color;
+
+        @include respondTo(handhelds) {
+          color: $second_color;
+
+          background: white;
+
+        }
+      }
+
+      &.active {
+        color: white;
+
+        background: $base_color;
+
+        @include border-radius(5px);
+
+        @include respondTo(handhelds) {
+          background: white;
+          color: $second_color;
+
+          @include border-radius(0);
+        }
+
+        &:after {
+          content: " ";
+
+          display: block;
+
+          width: 0;
+          height: 0;
+
+          border: 7px solid transparent;
+          border-top: 7px solid $base_color;
+
+          position: absolute;
+          top: 100%;
+          left: 50%;
+
+          margin-left: -7px;
+
+          @include respondTo(handhelds) {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/**
+ * Main Frame
+ */
+
+#main_frame {
+
+  header {
+    h2 {
+      font-size: $base_font_size * 4;
+      font-size: 4rem;
+      font-weight: normal;
+      text-transform: uppercase;
+
+      @include respondTo(handhelds) {
+        font-size: $base_font_size * 2;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.section_green {
+  background: $base_color;
+
+  color: white;
+
+  padding-bottom: 1em;
+}
+
+.section_black {
+  background: $second_color;
+
+  color: white;
+
+  padding-bottom: 1em;
+}
+
+.attach_arrow_green {
+  padding-top: 50px;
+
+  position: relative;
+
+  &:after {
+    @include makeArrow(35px, $base_color, "bottom");
+
+    content: " ";
+
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    margin-left: -35px;
+  }
+}
+
+.attach_arrow_black {
+  padding-top: 50px;
+
+  position: relative;
+
+  &:after {
+    @include makeArrow(35px, $second_color, "bottom");
+
+    content: " ";
+
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    margin-left: -35px;
+  }
+}
+
+.attach_arrow_white {
+  padding-top: 50px;
+
+  position: relative;
+
+  &:after {
+    @include makeArrow(35px, white, "bottom");
+
+    content: " ";
+
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    margin-left: -35px;
+  }
+}
+
+/**
+ * Each Part
+ */
+
+// About
+
+#about, #talks, #subject, #ways_to_submit  {
+  font-size: $base_font_size * 2;
+  font-size: 2rem;
+
+  line-height: 1.5em;
+
+  letter-spacing: .15em;
+
+  @include respondTo(handhelds) {
+    font-size: $base_font_size * 1.2;
+    font-size: 1.2rem;
+  }
+}
+
+// Info
+
+#info {
+  &>header {
+    display: none;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: $base_font_size * 4;
+    font-size: 4rem;
+    font-weight: normal;
+
+    @include respondTo(handhelds) {
+      font-size: $base_font_size * 2;
+      font-size: 2rem;
+    }
+  }
+
+  font-size: $base_font_size * 1.5;
+  font-size: 1.5rem;
+
+  letter-spacing: .15em;
+  line-height: 1.5em;
+
+  @include respondTo(handhelds) {
+    font-size: $base_font_size * 1.2;
+    font-size: 1.2rem;
+  }
+
+  .hint {
+    font-size: $base_font_size * 1.1;
+    font-size: 1.1rem;
+
+    margin-left: .5em;
+  }
+
+  .register {
+    position: relative;
+
+    &:after {
+      @include makeArrow(5px, white, "right");
+
+      content: " ";
+      position: absolute;
+      left: 100%;
+      top: 50%;
+
+      margin-top: -5px;
+    }
+  }
+}
+
+#time {
+  font-size: $base_font_size * 3;
+  font-size: 3rem;
+  text-transform: uppercase;
+
+  border-right: 1px solid adjust-lightness(black, 20%);
+
+  @include respondTo(handhelds) {
+    border: none;
+    border-bottom: 1px solid adjust-lightness(black, 20%);
+
+    font-size: $base_font_size * 1.2;
+    font-size: 1.2rem;
+  }
+  .register {
+    font-size: $base_font_size * 1.5;
+    font-size: 1.5rem;
+
+    @include respondTo(handhelds) {
+      font-size: $base_font_size * 1.1;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+#host {
+  .co-host {
+    cursor: pointer;
+    a {
+      color: $base_color;
+    }
+  }
+}
+
+#co-host {
+  display: none;
+  @include transition(1s);
+
+  .hint {
+    color: $base_color;
+  }
+}
+
+// Team
+
+#team, #speakers {
+  h3 {
+    font-size: $base_font_size * 2;
+    font-size: 2rem;
+
+    font-weight: normal;
+
+    color: adjust-lightness(black, 35%);
+
+    @include respondTo(handhelds) {
+      font-size: $base_font_size * 1.2;
+      font-size: 1.2rem;
+    }
+
+    .leader {
+      font-size: $base_font_size * 1.16667;
+      font-size: 1.16667rem;
+
+      @include respondTo(handhelds) {
+        font-size: $base_font_size * 1.1;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  h4 {
+    margin: .5em 0;
+  }
+
+  .info {
+    line-height: 1.5em;
+
+    letter-spacing: .15em;
+  }
+
+  .avatar {
+    float: left;
+
+    margin: $base_font_size * 1.5 0;
+
+    img {
+      @include border-radius(50%);
+    }
+  }
+
+  a {
+    color: $base_color;
+  }
+}
+
+#team {
+  .avatar {
+    margin: $base_font_size * 1.5;
+  }
+}
+
+// Speakers
+
+%hint {
+  text-align: center;
+
+  font-size: $base_font_size * 3;
+  font-size: 3rem;
+
+  @include respondTo(handhelds) {
+    font-size: $base_font_size * 1.2;
+    font-size: 1.2rem;
+  }
+
+  p {
+    text-transform: uppercase;
+  }
+
+  .span12, .span6 {
+    margin-top: 0;
+  }
+}
+
+#speakers {
+}
+
+// Schudle
+#schedule {
+  text-align: center;
+}
+
+#schedule-table {
+  width: 100%;
+
+  font-size: $base_font_size * 1.4;
+  font-size: 1.4rem;
+
+  line-height: 1.5em;
+
+  border-collapse: separate;
+  border-spacing: 2px;
+
+  margin: 2em auto;
+
+  tr:nth-child(even) {
+    background: darken($base_color, 3%);
+  }
+
+  td {
+    text-align: center;
+    text-shadow: #252 2px 2px;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  thead th {
+    background: darken($base_color, 5%);
+    text-align: center;
+  }
+
+  .talker, .host {
+    display: block;
+    text-shadow: none;
+
+    font-size: $base_font_size * 1.2;
+    font-size: 1.2rem;
+  }
+}
+
+// Sponsor
+#sponsor {
+  text-align: center;
+
+  .list {
+    @include clearfix;
+  }
+
+  .list > a {
+    float: left;
+    display: block;
+
+    margin-right: 5px;
+    margin-bottom: 0.5em;
+
+    height: 120px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .hint {
+    @extend %hint;
+  }
+}
+
+// Map
+#location {
+  header {
+    display: none;
+  }
+}
+
+
+// Feedback
+#feedback {
+  text-align: center;
+
+  header {
+    display: none;
+  }
+
+  p {
+    padding-bottom: 1em;
+  }
+}
