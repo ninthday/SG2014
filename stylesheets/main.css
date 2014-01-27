@@ -593,6 +593,14 @@ nav[role="main_menu"] header:after {
     }
 }
 
+#location img.smallshow{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%
+}
+
 #team h3, #committee h3 {
     font-size: 24px;
     font-size: 2rem;
@@ -629,9 +637,9 @@ nav[role="main_menu"] header:after {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    border-radius: 50%
+    border-radius: 50%;
 }
-#team a, #committee a {
+#team a, #committee a, #location a {
     color: #f16a23;
 }
 #team .avatar {
