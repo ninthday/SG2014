@@ -660,6 +660,15 @@ nav[role="main_menu"] header:after {
 #submission .hint .span12, #submission .hint .span6 {
     margin-top: 0;
 }
+
+#submission a {
+    color: #f8ca4d;
+}
+
+#submission a:hover {
+    text-decoration: underline;
+}
+
 #schedule {
     text-align: center;
 }
