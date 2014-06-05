@@ -483,7 +483,7 @@ nav[role="main_menu"] header:after {
     left: 50%;
     margin-left: -35px;
 }
-#about, #talks, #subject, #sponsor, #submission, #location {
+#about, #talks, #subject, #sponsor, #submission, #location, #regist {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.5em;
@@ -639,7 +639,7 @@ nav[role="main_menu"] header:after {
     -o-border-radius: 50%;
     border-radius: 50%;
 }
-#team a, #committee a, #location a {
+#team a, #committee a, #location a, #regist a {
     color: #f16a23;
 }
 #team .avatar {
@@ -682,7 +682,7 @@ nav[role="main_menu"] header:after {
     margin: 2em auto;
 }
 #schedule-table tr:nth-child(even) {
-    background: #f8ca4d;
+    background: #ffffe0;
 }
 #schedule-table td {
     text-align: center;
@@ -692,6 +692,11 @@ nav[role="main_menu"] header:after {
     text-align: center;
 }
 #schedule-table thead th {
+    background: #f8ca4d;
+    text-align: center;
+}
+
+#schedule-table tbody th {
     background: #f8ca4d;
     text-align: center;
 }
