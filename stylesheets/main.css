@@ -1,5 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Droid+Sans");
-    html {
+html {
     font-size: 12px;
     -webkit-font-size-adjust: none;
 }
@@ -17,9 +17,9 @@ body {
 }
 @media (max-width: 767px) {
     body {
-    font-size: 13.2px;
-    padding-top: 55px;
-}
+        font-size: 13.2px;
+        padding-top: 55px;
+    }
 }body.close {
     padding-top: 100px;
 }
@@ -78,7 +78,7 @@ p {
 }
 @media (max-width: 979px) {
     .container {
-    width: 96%}
+        width: 96%}
 }.row {
     margin-left: -20px;
     *zoom: 1;
@@ -145,54 +145,54 @@ p {
 }
 @media (max-width: 979px) {
     [class*="mobile"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-[class*="span"] {
-    margin-left: 0;
-    padding-left: 20px;
-}
-.mobileHide {
-    display: none;
-}
-.mobile1 {
-    width: 12.5%}
-.mobile2 {
-    width: 25%}
-.mobile3 {
-    width: 37.5%}
-.mobile4 {
-    width: 50%}
-.mobile5 {
-    width: 62.5%}
-.mobile6 {
-    width: 75%}
-.mobile7 {
-    width: 87.5%}
-.mobile8 {
-    width: 100%}
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    [class*="span"] {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+    .mobileHide {
+        display: none;
+    }
+    .mobile1 {
+        width: 12.5%}
+    .mobile2 {
+        width: 25%}
+    .mobile3 {
+        width: 37.5%}
+    .mobile4 {
+        width: 50%}
+    .mobile5 {
+        width: 62.5%}
+    .mobile6 {
+        width: 75%}
+    .mobile7 {
+        width: 87.5%}
+    .mobile8 {
+        width: 100%}
 }@media (max-width: 767px) {
     [class*="mobile"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-[class*="span"] {
-    margin-left: 0;
-    padding-left: 20px;
-}
-.mobileHide {
-    display: none;
-}
-.mobile1 {
-    width: 25%}
-.mobile2 {
-    width: 50%}
-.mobile3 {
-    width: 75%}
-.mobile4 {
-    width: 100%}
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    [class*="span"] {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+    .mobileHide {
+        display: none;
+    }
+    .mobile1 {
+        width: 25%}
+    .mobile2 {
+        width: 50%}
+    .mobile3 {
+        width: 75%}
+    .mobile4 {
+        width: 100%}
 }header[role="header"] {
     height: 250px;
     width: 100%;
@@ -219,11 +219,11 @@ header[role="header"] h1 {
 }
 @media (max-width: 767px) {
     header[role="header"] h1 {
-    text-indent: 0;
-    background: none;
-    width: auto;
-    height: auto;
-}
+        text-indent: 0;
+        background: none;
+        width: auto;
+        height: auto;
+    }
 }header[role="header"].close {
     height: 100px;
 }
@@ -232,9 +232,9 @@ header[role="header"].close h1 {
 }
 @media (max-width: 767px) {
     header[role="header"] {
-    height: auto;
-    padding: 10px 0;
-}
+        height: auto;
+        padding: 10px 0;
+    }
 }header[role="header"]:before, header[role="header"]:after {
     display: table;
     content: "";
@@ -258,47 +258,47 @@ footer[role="footer"] .split {
 }
 @media (max-width: 767px) {
     nav[role="main_menu"] {
-    position: absolute;
-    width: 96%;
-    top: 50%;
-    margin-top: -12px;
-}
+        position: absolute;
+        width: 96%;
+        top: 50%;
+        margin-top: -12px;
+    }
 }nav[role="main_menu"] header {
     display: none;
 }
 @media (max-width: 767px) {
     nav[role="main_menu"] header {
-    display: block;
-    text-align: right;
-    *zoom: 1;
-}
-nav[role="main_menu"] header h2 {
-    font-size: 13.2px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
-nav[role="main_menu"] header h2 a {
-    color: white;
-    background: #f16a23;
-    padding: 10px;
-}
-nav[role="main_menu"] header:before, nav[role="main_menu"] header:after {
-    display: table;
-    content: "";
-    line-height: 0;
-}
-nav[role="main_menu"] header:after {
-    clear: both;
-}
+        display: block;
+        text-align: right;
+        *zoom: 1;
+    }
+    nav[role="main_menu"] header h2 {
+        font-size: 13.2px;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+    nav[role="main_menu"] header h2 a {
+        color: white;
+        background: #f16a23;
+        padding: 10px;
+    }
+    nav[role="main_menu"] header:before, nav[role="main_menu"] header:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    nav[role="main_menu"] header:after {
+        clear: both;
+    }
 }nav[role="main_menu"] ul {
     text-align: center;
     padding: 0;
 }
 @media (max-width: 767px) {
     nav[role="main_menu"] ul {
-    background: #f16a23;
-    display: none;
-}
+        background: #f16a23;
+        display: none;
+    }
 }nav[role="main_menu"] li {
     display: inline;
     font-size: 18px;
@@ -306,15 +306,15 @@ nav[role="main_menu"] header:after {
 }
 @media (max-width: 979px) {
     nav[role="main_menu"] li {
-    font-size: 18px;
-    font-size: 1.3rem;
-}
+        font-size: 18px;
+        font-size: 1.3rem;
+    }
 }@media (max-width: 767px) {
     nav[role="main_menu"] li {
-    display: block;
-    font-size: 12.5px;
-    font-size: 1rem;
-}
+        display: block;
+        font-size: 12.5px;
+        font-size: 1rem;
+    }
 }nav[role="main_menu"] li a {
     display: inline-block;
     color: #a6a6a6;
@@ -324,17 +324,17 @@ nav[role="main_menu"] header:after {
 }
 @media (max-width: 767px) {
     nav[role="main_menu"] li a {
-    color: white;
-    display: block;
-}
+        color: white;
+        display: block;
+    }
 }nav[role="main_menu"] li a:hover {
     color: #1a1a1a;
 }
 @media (max-width: 767px) {
     nav[role="main_menu"] li a:hover {
-    color: #1a1a1a;
-    background: white;
-}
+        color: #1a1a1a;
+        background: white;
+    }
 }nav[role="main_menu"] li a.active {
     color: white;
     background: #f16a23;
@@ -346,14 +346,14 @@ nav[role="main_menu"] header:after {
 }
 @media (max-width: 767px) {
     nav[role="main_menu"] li a.active {
-    background: white;
-    color: #1a1a1a;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0;
-}
+        background: white;
+        color: #1a1a1a;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        border-radius: 0;
+    }
 }nav[role="main_menu"] li a.active:after {
     content: " ";
     display: block;
@@ -368,8 +368,8 @@ nav[role="main_menu"] header:after {
 }
 @media (max-width: 767px) {
     nav[role="main_menu"] li a.active:after {
-    border: none;
-}
+        border: none;
+    }
 }#main_frame header h2 {
     font-size: 48px;
     font-size: 4rem;
@@ -379,8 +379,8 @@ nav[role="main_menu"] header:after {
 }
 @media (max-width: 767px) {
     #main_frame header h2 {
-    font-size: 24px;
-    font-size: 2rem;
+        font-size: 24px;
+        font-size: 2rem;
     }
 }
 .section_green {
@@ -483,7 +483,7 @@ nav[role="main_menu"] header:after {
     left: 50%;
     margin-left: -35px;
 }
-#about, #talks, #subject, #sponsor, #submission, #location, #regist {
+#about, #schedule, #subject, #sponsor, #submission, #location, #regist {
     font-size: 24px;
     font-size: 1.5rem;
     line-height: 1.5em;
@@ -491,9 +491,9 @@ nav[role="main_menu"] header:after {
     text-align: justify;
 }
 @media (max-width: 767px) {
-    #about, #talks, #subject, #ways_to_submit, #submission {
-    font-size: 14.4px;
-    font-size: 1.2rem;
+    #about, #schedule, #subject, #ways_to_submit, #submission {
+        font-size: 14.4px;
+        font-size: 1.2rem;
     }
 }
 
@@ -514,14 +514,14 @@ nav[role="main_menu"] header:after {
 }
 @media (max-width: 767px) {
     #sponsor h3 {
-    font-size: 24px;
-    font-size: 2rem;
-}
+        font-size: 24px;
+        font-size: 2rem;
+    }
 }@media (max-width: 767px) {
     #sponsor {
-    font-size: 14.4px;
-    font-size: 1.2rem;
-}
+        font-size: 14.4px;
+        font-size: 1.2rem;
+    }
 }#sponsor .hint {
     font-size: 13.2px;
     font-size: 1.1rem;
@@ -550,20 +550,20 @@ nav[role="main_menu"] header:after {
 }
 @media (max-width: 767px) {
     #time {
-    border: none;
-    border-bottom: 1px solid #333;
-    font-size: 14.4px;
-    font-size: 1.2rem;
-}
+        border: none;
+        border-bottom: 1px solid #333;
+        font-size: 14.4px;
+        font-size: 1.2rem;
+    }
 }#time .register {
     font-size: 18px;
     font-size: 1.5rem;
 }
 @media (max-width: 767px) {
     #time .register {
-    font-size: 13.2px;
-    font-size: 1.1rem;
-}
+        font-size: 13.2px;
+        font-size: 1.1rem;
+    }
 }#host .co-host {
     cursor: pointer;
 }
@@ -601,6 +601,18 @@ nav[role="main_menu"] header:after {
     border-radius: 50%
 }
 
+#schedule img.avatar{
+    -webkit-box-shadow: rgba(0,0,0,.5) 0 4px 5px -1px;
+    -moz-box-shadow: rgba(0,0,0,.5) 0 4px 5px -1px;
+    box-shadow: rgba(0,0,0,.5) 0 4px 5px -1px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    border: solid 3px #FFF;
+}
+
 #team h3, #committee h3 {
     font-size: 24px;
     font-size: 2rem;
@@ -609,18 +621,18 @@ nav[role="main_menu"] header:after {
 }
 @media (max-width: 767px) {
     #team h3, #committee h3 {
-    font-size: 14.4px;
-    font-size: 1.2rem;
-}
+        font-size: 14.4px;
+        font-size: 1.2rem;
+    }
 }#team h3 .leader, #committee h3 .leader {
     font-size: 14.00004px;
     font-size: 1.16667rem;
 }
 @media (max-width: 767px) {
     #team h3 .leader, #committee h3 .leader {
-    font-size: 13.2px;
-    font-size: 1.1rem;
-}
+        font-size: 13.2px;
+        font-size: 1.1rem;
+    }
 }#team h4, #committee h4 {
     margin: 0.5em 0;
 }
@@ -651,9 +663,9 @@ nav[role="main_menu"] header:after {
 }
 @media (max-width: 767px) {
     #submission .hint {
-    font-size: 14.4px;
-    font-size: 1.2rem;
-}
+        font-size: 14.4px;
+        font-size: 1.2rem;
+    }
 }#submission .hint p {
     text-transform: uppercase;
 }
@@ -661,16 +673,16 @@ nav[role="main_menu"] header:after {
     margin-top: 0;
 }
 
-#submission a {
+#submission a, #schedule a {
     color: #f8ca4d;
 }
 
-#submission a:hover {
+#submission a:hover, #schedule a:hover {
     text-decoration: underline;
 }
 
 #schedule {
-    text-align: center;
+    text-align: justify;
 }
 #schedule-table {
     width: 100%;
@@ -718,9 +730,9 @@ nav[role="main_menu"] header:after {
 }
 @media (max-width: 767px) {
     #sponsor h3 {
-    font-size: 14.4px;
-    font-size: 1.2rem;
-}
+        font-size: 14.4px;
+        font-size: 1.2rem;
+    }
 }
 #sponsor .list:before, #sponsor .list:after {
     display: table;
