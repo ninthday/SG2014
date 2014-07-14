@@ -225,7 +225,7 @@ header[role="header"] h1 {
         height: auto;
     }
 }header[role="header"].close {
-    height: 100px;
+    height: 80px;
 }
 header[role="header"].close h1 {
     height: 0;
@@ -692,13 +692,16 @@ footer[role="footer"] .split {
     border-collapse: separate;
     border-spacing: 2px;
     margin: 2em auto;
+    background: #fff;
 }
 #schedule-table tr:nth-child(even) {
-    background: #ffffe0;
+    background: #fbe799;
 }
 #schedule-table td {
     text-align: center;
-    text-shadow: #4a2d35 1px 1px;
+    text-shadow: #ccc 1px 1px;
+    color: #2f3440;
+    font-weight: 600;
 }
 #schedule-table th {
     text-align: center;
@@ -717,6 +720,94 @@ footer[role="footer"] .split {
     text-shadow: none;
     font-size: 14.4px;
     font-size: 1.2rem;
+}
+#schedule .session-card {
+    background: #fff;
+    border: solid 1px #fff;
+    min-height: 110px;
+}
+
+#schedule .session-card .card-head {
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+#schedule .session-card .card-body {
+    padding: 2px 5px;
+    color: #2f3440;
+}
+
+#schedule .session-card .card-body .time{
+    color: #a6a6a6;
+    font-size: 14.4px;
+    font-size: 1.2rem;
+}
+
+#schedule .session-card .card-body .topic{
+    text-align: left;
+    margin-top: 13px;
+}
+
+#schedule .session-card .card-body .author{
+    padding-left: 10px;
+    font-size: 18px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#schedule .session-card .card-body .author span{
+    background: #ddd;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 2px 5px;
+}
+
+#schedule div.tag-red {
+    background: #f1696a;
+}
+
+#schedule a.tag-red {
+    color: #f1696a;
+}
+
+#schedule div.tag-orange {
+    background: #ef8819;
+}
+
+#schedule a.tag-orange {
+    color: #ef8819;
+}
+
+#schedule div.tag-yellow {
+    background: #f8ca4d;
+}
+
+#schedule a.tag-yellow {
+    color: #f8ca4d;
+}
+
+#schedule div.tag-green {
+    background: #94d766;
+}
+
+#schedule a.tag-green {
+    color: #94d766;
+}
+
+#schedule div.tag-blue {
+    background: #42BEF3;
+}
+
+#schedule a.tag-blue {
+    color: #42BEF3;
+}
+
+#schedule div.tag-purple {
+    background: #9b82bc;
+}
+
+#schedule a.tag-purple {
+    color: #9b82bc;
 }
 
 #sponsor .list {
