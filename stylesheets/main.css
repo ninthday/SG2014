@@ -733,7 +733,7 @@ footer[role="footer"] .split {
 }
 
 #schedule .session-card .card-body {
-    padding: 2px 5px;
+    padding: 15px;
     color: #2f3440;
 }
 
@@ -808,6 +808,14 @@ footer[role="footer"] .split {
 
 #schedule a.tag-purple {
     color: #9b82bc;
+}
+
+#schedule div.dark-purple {
+    background: #42001C;
+}
+
+#schedule a.dark-purple {
+    color: #42001C;
 }
 
 #sponsor .list {
